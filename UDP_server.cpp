@@ -13,6 +13,7 @@
 
 // ---
 #include <pcap/socket.h>
+
 #define BUFFER_SIZE 1024
 
 
@@ -62,8 +63,8 @@ void UDP_server::recvFromMessage(char **_argv) {
         memset(msg_recv, 0, sizeof(msg_recv));
 
         sockaddr_in from;
-        socklen_t fromSize        = sizeof (from);
-        int rVal_recv = recvfrom(mServerSocket, msg_recv, BUFFER_SIZE, 0, (sockaddr*) &from, &fromSize);
+        socklen_t fromSize = sizeof(from);
+        int rVal_recv = recvfrom(mServerSocket, msg_recv, BUFFER_SIZE, 0, (sockaddr *) &from, &fromSize);
         if (rVal_recv == -1) {
             std::cout << "Error!";
             exit(0);
@@ -98,7 +99,7 @@ void UDP_server::recvFromMessage(char **_argv) {
 
         } else {
             //print the recv message
-            std::cout << "message recved: " << msg_recv << "\n";
+            std::cout << "message received: " << msg_recv << "\n";
 
             //send echo
             sendToMessage(msg_recv, _argv, from);
@@ -110,9 +111,9 @@ void UDP_server::sendToMessage(char *msg_recv, char **_argv, sockaddr_in _from) 
     char *msg_send = msg_recv;
     int msg_sendSize = strlen(msg_send);
 
-    int toSize          = sizeof (_from);
+    int toSize = sizeof(_from);
 
-    int rVal_send = sendto(mServerSocket, msg_send, msg_sendSize, 0, (sockaddr*) &_from, toSize);
+    int rVal_send = sendto(mServerSocket, msg_send, msg_sendSize, 0, (sockaddr *) &_from, toSize);
     if (rVal_send == -1) {
         std::cout << "Error!";
         exit(-1);

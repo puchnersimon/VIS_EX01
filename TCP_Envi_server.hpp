@@ -26,7 +26,13 @@
  */
 class TCP_Envi_server {
 public:
+    /**
+     * Server Socket
+     */
     SOCKET mServerSocket;
+    /**
+     * Communication Socket
+     */
     SOCKET mCommSocket;
 
     /**
@@ -74,7 +80,7 @@ public:
     void listenSocket();
 
     /**
-     *  Waits for clients to connect. If it fails, the methode exits with -1.
+     *  Accepts the client and starts thread for mutual use. If thread ends accept is called again.
      */
     //accept-Client
     void acceptClient();
@@ -84,9 +90,10 @@ public:
      * Returns -1 if not. Then checks if the message is "quit", which quits the connection with a client,
      * or "shutdown", which closes the socket.
      * If those two comparisons are wrong it checks which command has been sent and answers with the corresponding
-     * light, noise or air value. Or it sends either a information on which values are available or even sends all of them.
+     * light, noise or air value. Or it sends either a information on which values are available
+     * or even sends all of them. Repeats that process if client did not quited or shut both itself and server down.
      * @param _parameter - contains server- and commSocket
-     * @return
+     * @return void
      */
     //recv - with thread
     static void *clientCommunicaton(void *_parameter);

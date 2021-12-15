@@ -17,12 +17,15 @@
 
 /**
  * TCP Environment Client
- * this client can communicate with the TCP_envi_server
+ * This client can communicate with the TCP_envi_server
  * the client uses specific commands(shown by starting client) to get values from different sensortypes
  * @param mCommSocket socket variable for client to connect and communicate with serversocket
  */
 class TCP_Envi_client {
 public:
+    /**
+     * Socket
+     */
     SOCKET mCommSocket;
 
     /**
@@ -46,7 +49,7 @@ public:
 
     /**
      * creates the socket
-     * checks if an error occurs and exits with -1.
+     * checks if an error occurs and exits with -1 if so.
      */
     //create-Socket
     void createSocket();
