@@ -1,0 +1,4 @@
+/Users/simon/CLionProjects/VIS_EX01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/simon/CLionProjects/VIS_EX01/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/simon/CLionProjects/VIS_EX01/cmake-build-debug/CMakeFiles/Client.dir
+/Users/simon/CLionProjects/VIS_EX01/cmake-build-debug/CMakeFiles/Server.dir
