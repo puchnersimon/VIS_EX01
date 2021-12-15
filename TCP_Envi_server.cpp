@@ -47,7 +47,6 @@ void TCP_Envi_server::InitializeSocket(char **_argv) {
 
 //create-Socket
 void TCP_Envi_server::createSocket() {
-
     mServerSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     //errorhandling - if serversocket cannot created, program exits with errorcode: -1
     if (mServerSocket == -1) {
