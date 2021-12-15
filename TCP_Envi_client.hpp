@@ -45,6 +45,9 @@ public:
      */
     void InitializeSocket(char **_argv);
 
+    /**
+     * creates the socket
+     */
     //create-Socket
     void createSocket();
 
