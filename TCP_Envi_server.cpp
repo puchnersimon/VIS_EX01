@@ -182,8 +182,9 @@ void *TCP_Envi_server::clientCommunicaton(void *_parameter) {
 
 
             char msg_send[BUFFER_SIZE];
+            memset(msg_send, 0, sizeof(msg_send));
             strcat(msg_send, timestamp);
-            strcat(msg_send, "|air:");
+            strcat(msg_send, "|");
             for (int i = 0; i < 3; i++) {
                 //convert random integer to string
                 int random = rand() % 100;
@@ -219,8 +220,9 @@ void *TCP_Envi_server::clientCommunicaton(void *_parameter) {
 
 
             char msg_send[BUFFER_SIZE];
+            memset(msg_send, 0, sizeof(msg_send));
             strcat(msg_send, timestamp);
-            strcat(msg_send, "|noise:");
+            strcat(msg_send, "|");
             //convert random integer to string
             int random = rand() % 100;
             std::string s = std::to_string(random);
@@ -252,8 +254,9 @@ void *TCP_Envi_server::clientCommunicaton(void *_parameter) {
             strcpy(timestamp, time_string.c_str());
 
             char msg_send[BUFFER_SIZE];
+            memset(msg_send, 0, sizeof(msg_send));
             strcat(msg_send, timestamp);
-            strcat(msg_send, "|light:");
+            strcat(msg_send, "|");
             //convert random integer to string
             int random = rand() % 100;
             std::string s = std::to_string(random);
@@ -287,6 +290,7 @@ void *TCP_Envi_server::clientCommunicaton(void *_parameter) {
 
             //send
             char msg_send[BUFFER_SIZE];
+            memset(msg_send, 0, sizeof(msg_send));
             strcat(msg_send, timestamp);
             strcat(msg_send, "|light;");
             //convert random integer to string

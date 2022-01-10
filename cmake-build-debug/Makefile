@@ -190,6 +190,30 @@ TCP_Envi_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/TCP_Envi_server.cpp.s
 .PHONY : TCP_Envi_server.cpp.s
 
+TCP_HTTP_server.o: TCP_HTTP_server.cpp.o
+.PHONY : TCP_HTTP_server.o
+
+# target to build an object file
+TCP_HTTP_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/TCP_HTTP_server.cpp.o
+.PHONY : TCP_HTTP_server.cpp.o
+
+TCP_HTTP_server.i: TCP_HTTP_server.cpp.i
+.PHONY : TCP_HTTP_server.i
+
+# target to preprocess a source file
+TCP_HTTP_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/TCP_HTTP_server.cpp.i
+.PHONY : TCP_HTTP_server.cpp.i
+
+TCP_HTTP_server.s: TCP_HTTP_server.cpp.s
+.PHONY : TCP_HTTP_server.s
+
+# target to generate assembly for a file
+TCP_HTTP_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/TCP_HTTP_server.cpp.s
+.PHONY : TCP_HTTP_server.cpp.s
+
 TCP_v4_Echo_server.o: TCP_v4_Echo_server.cpp.o
 .PHONY : TCP_v4_Echo_server.o
 
@@ -398,6 +422,9 @@ help:
 	@echo "... TCP_Envi_server.o"
 	@echo "... TCP_Envi_server.i"
 	@echo "... TCP_Envi_server.s"
+	@echo "... TCP_HTTP_server.o"
+	@echo "... TCP_HTTP_server.i"
+	@echo "... TCP_HTTP_server.s"
 	@echo "... TCP_v4_Echo_server.o"
 	@echo "... TCP_v4_Echo_server.i"
 	@echo "... TCP_v4_Echo_server.s"

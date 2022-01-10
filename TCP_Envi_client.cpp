@@ -58,6 +58,7 @@ void TCP_Envi_client::sendMessage() {
     while (1) {
 
         char msg_send[BUFFER_SIZE];
+        memset(msg_send, 0, sizeof(msg_send));
         std::cout << "enter a message: ";
         std::cin.getline(msg_send, BUFFER_SIZE);
         int msg_sendSize = strlen(msg_send);

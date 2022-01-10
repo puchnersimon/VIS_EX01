@@ -4,6 +4,9 @@
 CMakeFiles/Server.dir/TCP_Envi_server.cpp.o: \
  ../TCP_Envi_server.cpp \
  ../TCP_Envi_server.hpp
+CMakeFiles/Server.dir/TCP_HTTP_server.cpp.o: \
+ ../TCP_HTTP_server.cpp \
+ ../TCP_HTTP_server.hpp
 CMakeFiles/Server.dir/TCP_v4_Echo_server.cpp.o: \
  ../TCP_v4_Echo_server.cpp \
  ../TCP_v4_Echo_server.hpp
@@ -15,6 +18,7 @@ CMakeFiles/Server.dir/UDP_server.cpp.o: \
  ../UDP_server.hpp
 CMakeFiles/Server.dir/server_main.cpp.o: \
  ../TCP_Envi_server.hpp \
+ ../TCP_HTTP_server.hpp \
  ../TCP_v4_Echo_server.hpp \
  ../TCP_v6_Echo_server.hpp \
  ../UDP_server.hpp \

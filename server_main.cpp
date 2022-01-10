@@ -20,6 +20,7 @@
 #include "TCP_v6_Echo_server.hpp"
 #include "UDP_server.hpp"
 #include "TCP_Envi_server.hpp"
+#include "TCP_HTTP_server.hpp"
 
 #ifndef SOCKETSERVER_H
 #define SOCKETSERVER_H
@@ -87,7 +88,8 @@ int main(int _argc, char **_argv) {
             break;
         }
         case 4: {
-            cout << "not supported!";
+            TCP_HTTP_server httpServer = TCP_HTTP_server();
+            httpServer.InitializeSocket(_argv);
             break;
         }
         case 5: {

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/simon/CLionProjects/VIS_EX01/TCP_Envi_server.cpp
+/Users/simon/CLionProjects/VIS_EX01/TCP_HTTP_server.cpp
 iostream
 -
 sys/socket.h
@@ -21,18 +21,18 @@ string.h
 -
 semaphore.h
 -
-chrono
+string
 -
-ctime
+algorithm
 -
-cstdlib
+regex
 -
 pcap/socket.h
 -
-TCP_Envi_server.hpp
-/Users/simon/CLionProjects/VIS_EX01/TCP_Envi_server.hpp
+TCP_HTTP_server.hpp
+/Users/simon/CLionProjects/VIS_EX01/TCP_HTTP_server.hpp
 
-/Users/simon/CLionProjects/VIS_EX01/TCP_Envi_server.hpp
+/Users/simon/CLionProjects/VIS_EX01/TCP_HTTP_server.hpp
 iostream
 -
 sys/socket.h

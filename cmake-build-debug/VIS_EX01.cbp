@@ -130,6 +130,12 @@
 		<Unit filename="/Users/simon/CLionProjects/VIS_EX01/TCP_Envi_server.hpp">
 			<Option target="Server"/>
 		</Unit>
+		<Unit filename="/Users/simon/CLionProjects/VIS_EX01/TCP_HTTP_server.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/Users/simon/CLionProjects/VIS_EX01/TCP_HTTP_server.hpp">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="/Users/simon/CLionProjects/VIS_EX01/TCP_v4_Echo_server.cpp">
 			<Option target="Server"/>
 		</Unit>

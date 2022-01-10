@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/simon/CLionProjects/VIS_EX01/TCP_Envi_server.cpp" "/Users/simon/CLionProjects/VIS_EX01/cmake-build-debug/CMakeFiles/Server.dir/TCP_Envi_server.cpp.o"
+  "/Users/simon/CLionProjects/VIS_EX01/TCP_HTTP_server.cpp" "/Users/simon/CLionProjects/VIS_EX01/cmake-build-debug/CMakeFiles/Server.dir/TCP_HTTP_server.cpp.o"
   "/Users/simon/CLionProjects/VIS_EX01/TCP_v4_Echo_server.cpp" "/Users/simon/CLionProjects/VIS_EX01/cmake-build-debug/CMakeFiles/Server.dir/TCP_v4_Echo_server.cpp.o"
   "/Users/simon/CLionProjects/VIS_EX01/TCP_v6_Echo_server.cpp" "/Users/simon/CLionProjects/VIS_EX01/cmake-build-debug/CMakeFiles/Server.dir/TCP_v6_Echo_server.cpp.o"
   "/Users/simon/CLionProjects/VIS_EX01/UDP_server.cpp" "/Users/simon/CLionProjects/VIS_EX01/cmake-build-debug/CMakeFiles/Server.dir/UDP_server.cpp.o"
